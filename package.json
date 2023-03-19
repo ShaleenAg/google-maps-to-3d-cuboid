@@ -1,0 +1,31 @@
+{
+  "name": "snaptrude-assignment",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.51.0",
+    "@babylonjs/gui": "^5.51.0",
+    "@babylonjs/loaders": "^5.51.0",
+    "@react-google-maps/api": "^2.18.1",
+    "html2canvas": "^1.4.1",
+    "react": "^17.0.2",
+    "react-babylonjs": "^3.1.4",
+    "react-dom": "^17.0.2",
+    "react-jss": "^10.10.0",
+    "use-react-screenshot": "^3.0.0",
+    "vite-tsconfig-paths": "^4.0.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.0.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
+  }
+}
