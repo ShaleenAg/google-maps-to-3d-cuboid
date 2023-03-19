@@ -1,11 +1,12 @@
-import {  useCallback } from 'react'
-import {  Color3,Texture } from '@babylonjs/core'
-import {  useScene } from 'react-babylonjs';
+import React, { useCallback } from 'react'
+import { Color3, Texture } from '@babylonjs/core'
+import { useScene } from 'react-babylonjs';
 
 
 const Cuboid = ({ url }: { url: string }) => {
     const scene = useScene()
-    const textureRef = useCallback((node) => {
+
+    const textureRef = useCallback((node: any) => {
         if (node != null) {
             const texture = new Texture(url = url, scene)
             const material = node
@@ -14,7 +15,7 @@ const Cuboid = ({ url }: { url: string }) => {
     }, [url])
     return (
         <box name="test-box" size={2} wrap>
-            <standardMaterial ref={textureRef} name="test" specularColor={Color3.Black()} />
+            <standardMaterial ref={textureRef} name="test" specularColor={Color3.Black()} key={url} />
         </box>
     )
 }
